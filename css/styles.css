@@ -1,6 +1,21 @@
 /********************
 YOUR STYLES
 *******************/
+h1 {
+  color: grey;
+}
+.temp {
+  color: pink;
+}
+
+.city {
+  color: lavender;
+}
+
+.state {
+  color: skyblue;
+}
+
 
 
 
