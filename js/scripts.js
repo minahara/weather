@@ -1,4 +1,15 @@
 // YOUR SCRIPTS GO HERE
+//side bar
+$('#sidr-show-hide').sidr(
+);
+$('#close').sidr({
+  method: 'close'
+
+  
+});
+
+
+
 $.simpleWeather({
   location: 99004,
   
