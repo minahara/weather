@@ -1,3 +1,4 @@
+//SIDE BAR
 $('#sidr-show-hide').sidr();
 
 // Close from inside
@@ -77,7 +78,7 @@ $.simpleWeather({
     },
     error: function(error) {
       // Show if weather cannot be retreived
-      console.log('Oops! Something went wrong... Long Beach is usually mild anyway.');
+      console.log('Oops! Something went wrong... Long Beach is usually mild and rainy anyway.');
     }
   
   });
@@ -141,13 +142,20 @@ var getWeather = function(location) {
 };
 
 
-// Display Forecast
-//     $('#spokane .forecast figure:nth-child(1) img').attr('src', weather.forecast[0].image);
-//     $('.forecast figure:nth-child(1) figcaption').text(weather.forecast[1].text);
-//   },
-  
-  
-//   error: function(error) {
-//     console.log('Look outside.');
-//   }
-// });
+//FORECAST
+    $('#forecast figure:nth-child(1) h2').text(weather.forecast[0].day);
+      $('#forecast figure:nth-child(1) img').attr('src', weather.forecast[0].image);
+      $('#forecast figure:nth-child(1) figcaption').text(weather.forecast[0].text);
+      $('#forecast figure:nth-child(1) .high').text(weather.forecast[0].high);
+      
+       //forecast day 2
+      $('#forecast figure:nth-child(2) h2').text(weather.forecast[1].day);
+      $('#forecast figure:nth-child(2) img').attr('src', weather.forecast[1].image);
+      $('#forecast figure:nth-child(2) figcaption').text(weather.forecast[1].text);
+      $('#forecast figure:nth-child(2) .high').text(weather.forecast[1].high);
+      
+      //forecast day 3
+      $('#forecast figure:nth-child(3) h2').text(weather.forecast[2].day);
+      $('#forecast figure:nth-child(3) img').attr('src', weather.forecast[2].image);
+      $('#forecast figure:nth-child(3) figcaption').text(weather.forecast[2].text);
+      $('#forecast figure:nth-child(3) .high').text(weather.forecast[2].high);

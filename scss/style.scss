@@ -1,0 +1,141 @@
+// http://codepen.io/manikoth/pen/rxXrvb.css
+i {
+  font-size: 12em;
+  color: white;
+}
+
+// Section Containers
+section {
+  color: white;
+  min-height: 20em;
+  width: 100%;
+  position: absolute;
+}
+
+#homescreen {
+  background: yellow;
+  z-index: 1;
+}
+
+#spokane {
+  background: black;
+  
+}
+
+
+#long {
+  background: black;
+}
+
+#me {
+  background: black;
+}
+
+:target {
+  z-index: 1;
+}
+
+// Minimal initial style of sidebar
+$sidebar-width: 16em;
+$sidebar-width-neg: -16em;
+.sidr {
+  background: grey;
+  display: block;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  z-index: 999999;
+  width: $sidebar-width;
+  overflow-x: hidden;
+  overflow-y: auto;
+  &.left {
+    left: $sidebar-width-neg;
+    right: auto;
+  }
+}
+
+li a {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#sidr-show-hide {
+  text-decoration: none;
+  color: black;
+}
+
+#close {
+  text-decoration: none;
+  color: black;
+}
+
+//backgrounds
+.snow,
+.cloud,
+.rain {
+  background: #bdc3c7;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #bdc3c7, #2c3e50);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #bdc3c7, #2c3e50);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.storm {
+  background: #E6DADA;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #E6DADA, #274046);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #E6DADA, #274046);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.sunny {
+  background: #F09819;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #F09819, #EDDE5D);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #F09819, #EDDE5D);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.haze {
+  background: #1e130c;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #1e130c, #9a8478);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #1e130c, #9a8478);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.wind {
+  background: #649173;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #649173, #DBD5A4);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #649173, #DBD5A4);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+// forecast
+#forecast{
+  background: grey;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#forecast figure{
+  background: teal;
+  padding: 1.5em;
+}
+
+#forecast figure:nth-child(1) {
+  background: green;
+}
+
